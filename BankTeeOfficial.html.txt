@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BankTee Music Profile</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('path/to/your-image.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #fff;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            text-align: center;
+        }
+        section {
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        .payment {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BankTee Music Profile</h1>
+    </header>
+    <section>
+        <h2>About Me</h2>
+        <p>Welcome to my music profile! I'm BankTee, an artist passionate about creating unique sounds.</p>
+        
+        <h2>Upcoming Shows</h2>
+        <ul>
+            <li>Show 1: Date, Venue</li>
+            <li>Show 2: Date, Venue</li>
+            <!-- Add more shows as needed -->
+        </ul>
+
+        <h2>Support My Music</h2>
+        <div class="payment">
+            <form action="/your-server-endpoint" method="POST">
+                <script
+                    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+                    data-key="your-publishable-key-here"
+                    data-amount="5000"
+                    data-name="BankTee Music"
+                    data-description="Support my music"
+                    data-image="https://yourdomain.com/path/to/logo.png"
+                    data-locale="auto"
+                    data-currency="usd">
+                </script>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
